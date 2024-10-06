@@ -1,0 +1,102 @@
+/* Modal.css */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal is above other elements */
+}
+
+.modal-content {
+    background-color: #444; /* Dark gray background for modal */
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px; /* Fixed width for modal */
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content img {
+    width: 100%; /* Full width for modal image */
+    border-radius: 10px; /* Round corners for modal image */
+    margin-bottom: 15px; /* Space below image */
+}
+
+.modal-content h2 {
+    color: #fff; /* White for heading */
+    margin: 10px 0;
+}
+
+.modal-content p {
+    color: #ccc; /* Lighter gray for text */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.product-price {
+    font-weight: bold; /* Bold for product price */
+    color: #ffd700; /* Gold color for emphasis */
+}
+
+.close {
+    background-color: #dc3545; /* Red for close button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.close:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 15px; 
+    }
+
+    .modal-content h2 {
+        font-size: 20px; 
+    }
+
+    .modal-content p {
+        font-size: 14px; 
+    }
+
+    .modal-content button {
+        font-size: 14px; 
+    }
+
+    .additional-images img {
+        max-width: 60px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        max-width: 95%;
+    }
+
+    .modal-content h2 {
+        font-size: 18px; 
+    }
+
+    .modal-content p {
+        font-size: 12px; 
+    }
+
+    .modal-content button {
+        padding: 8px 12px; 
+    }
+}
+
+
